@@ -13,6 +13,10 @@
 		815121A3281DAFFA0026C808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815121A2281DAFFA0026C808 /* Preview Assets.xcassets */; };
 		815121A5281DAFFA0026C808 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121A4281DAFFA0026C808 /* Persistence.swift */; };
 		815121A8281DAFFA0026C808 /* VTGPA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 815121A6281DAFFA0026C808 /* VTGPA.xcdatamodeld */; };
+		815121B0281DB1B20026C808 /* CourseSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121AF281DB1B20026C808 /* CourseSearch.swift */; };
+		815121B4281DB2210026C808 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B3281DB2210026C808 /* Home.swift */; };
+		815121B7281DB35C0026C808 /* GradeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 815121B6281DB35C0026C808 /* GradeData.json */; };
+		815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B8281DB4C10026C808 /* CourseStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		815121A2281DAFFA0026C808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		815121A4281DAFFA0026C808 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		815121A7281DAFFA0026C808 /* VTGPA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VTGPA.xcdatamodel; sourceTree = "<group>"; };
+		815121AF281DB1B20026C808 /* CourseSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSearch.swift; sourceTree = "<group>"; };
+		815121B3281DB2210026C808 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		815121B6281DB35C0026C808 /* GradeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeData.json; sourceTree = "<group>"; };
+		815121B8281DB4C10026C808 /* CourseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,8 @@
 		8151219A281DAFF60026C808 /* VTGPA */ = {
 			isa = PBXGroup;
 			children = (
+				815121B5281DB3530026C808 /* Data Models */,
+				815121AE281DB1930026C808 /* Tab Bar Views */,
 				8151219B281DAFF60026C808 /* VTGPAApp.swift */,
 				8151219D281DAFF60026C808 /* ContentView.swift */,
 				8151219F281DAFFA0026C808 /* Assets.xcassets */,
@@ -71,6 +81,40 @@
 				815121A2281DAFFA0026C808 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		815121AE281DB1930026C808 /* Tab Bar Views */ = {
+			isa = PBXGroup;
+			children = (
+				815121B2281DB2190026C808 /* Home */,
+				815121B1281DB1BA0026C808 /* Course Search */,
+			);
+			path = "Tab Bar Views";
+			sourceTree = "<group>";
+		};
+		815121B1281DB1BA0026C808 /* Course Search */ = {
+			isa = PBXGroup;
+			children = (
+				815121AF281DB1B20026C808 /* CourseSearch.swift */,
+			);
+			path = "Course Search";
+			sourceTree = "<group>";
+		};
+		815121B2281DB2190026C808 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				815121B3281DB2210026C808 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		815121B5281DB3530026C808 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				815121B6281DB35C0026C808 /* GradeData.json */,
+				815121B8281DB4C10026C808 /* CourseStruct.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +177,7 @@
 			files = (
 				815121A3281DAFFA0026C808 /* Preview Assets.xcassets in Resources */,
 				815121A0281DAFFA0026C808 /* Assets.xcassets in Resources */,
+				815121B7281DB35C0026C808 /* GradeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				815121A8281DAFFA0026C808 /* VTGPA.xcdatamodeld in Sources */,
+				815121B0281DB1B20026C808 /* CourseSearch.swift in Sources */,
+				815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */,
 				815121A5281DAFFA0026C808 /* Persistence.swift in Sources */,
 				8151219E281DAFF60026C808 /* ContentView.swift in Sources */,
+				815121B4281DB2210026C808 /* Home.swift in Sources */,
 				8151219C281DAFF60026C808 /* VTGPAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
