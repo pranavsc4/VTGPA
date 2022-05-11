@@ -17,6 +17,10 @@
 		815121B4281DB2210026C808 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B3281DB2210026C808 /* Home.swift */; };
 		815121B7281DB35C0026C808 /* GradeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 815121B6281DB35C0026C808 /* GradeData.json */; };
 		815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B8281DB4C10026C808 /* CourseStruct.swift */; };
+		818F9512282B387F00304DA4 /* GradeDataClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 818F9511282B387F00304DA4 /* GradeDataClean.json */; };
+		818F9514282B3A7300304DA4 /* CourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9513282B3A7300304DA4 /* CourseData.swift */; };
+		818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9516282B3BB300304DA4 /* SearchBar.swift */; };
+		818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9517282B3BB300304DA4 /* UtilityFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		815121B3281DB2210026C808 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		815121B6281DB35C0026C808 /* GradeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeData.json; sourceTree = "<group>"; };
 		815121B8281DB4C10026C808 /* CourseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
+		818F9511282B387F00304DA4 /* GradeDataClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeDataClean.json; sourceTree = "<group>"; };
+		818F9513282B3A7300304DA4 /* CourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseData.swift; sourceTree = "<group>"; };
+		818F9516282B3BB300304DA4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		818F9517282B3BB300304DA4 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		8151219A281DAFF60026C808 /* VTGPA */ = {
 			isa = PBXGroup;
 			children = (
+				818F9515282B3BA100304DA4 /* Utility Functions */,
 				815121B5281DB3530026C808 /* Data Models */,
 				815121AE281DB1930026C808 /* Tab Bar Views */,
 				8151219B281DAFF60026C808 /* VTGPAApp.swift */,
@@ -111,10 +120,21 @@
 		815121B5281DB3530026C808 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				818F9511282B387F00304DA4 /* GradeDataClean.json */,
+				818F9513282B3A7300304DA4 /* CourseData.swift */,
 				815121B6281DB35C0026C808 /* GradeData.json */,
 				815121B8281DB4C10026C808 /* CourseStruct.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		818F9515282B3BA100304DA4 /* Utility Functions */ = {
+			isa = PBXGroup;
+			children = (
+				818F9516282B3BB300304DA4 /* SearchBar.swift */,
+				818F9517282B3BB300304DA4 /* UtilityFunctions.swift */,
+			);
+			path = "Utility Functions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +198,7 @@
 				815121A3281DAFFA0026C808 /* Preview Assets.xcassets in Resources */,
 				815121A0281DAFFA0026C808 /* Assets.xcassets in Resources */,
 				815121B7281DB35C0026C808 /* GradeData.json in Resources */,
+				818F9512282B387F00304DA4 /* GradeDataClean.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +214,10 @@
 				815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */,
 				815121A5281DAFFA0026C808 /* Persistence.swift in Sources */,
 				8151219E281DAFF60026C808 /* ContentView.swift in Sources */,
+				818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */,
 				815121B4281DB2210026C808 /* Home.swift in Sources */,
+				818F9514282B3A7300304DA4 /* CourseData.swift in Sources */,
+				818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */,
 				8151219C281DAFF60026C808 /* VTGPAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

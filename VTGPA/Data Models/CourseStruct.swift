@@ -10,24 +10,37 @@ import SwiftUI
 // Struct Representing Each Course
 struct Course: Hashable, Codable, Identifiable {
     var id = UUID()
-    
+    var academicYear: String
+    var subject: String
+    var courseNumber: Int
+    var courseTitle: String
+    var instructor: String
+    var gpa: Double
+    var aPercent: Double
+    var bPercent: Double
+    var cPercent: Double
+    var dPercent: Double
+    var fPercent: Double
+    var gradedEnrollment: Int
+    var crn: Int
+    var credits: Int
 }
 
 //{
-//  "Academic Year": "2016-17",
-//  "Term": "Spring",
-//  "Subject": "HORT",
-//  "Course No.": 3346,
-//  "Course Title": "Herbaceous Landscape Plants",
-//  "Instructor": "Scoggins",
-//  "GPA": 3.85,
-//  "A (%)": 75,
-//  "B (%)": 25,
-//  "C (%)": 0,
-//  "D (%)": 0,
-//  "F (%)": 0,
-//  "Withdraws": 0,
-//  "Graded Enrollment": 8,
-//  "CRN": 19402,
-//  "Credits": 0
-//},
+// "academicYear": "2016-17",
+// "term": "Spring",
+// "subject": "HORT",
+// "courseNumber": 3346,
+// "courseTitle": "Herbaceous Landscape Plants",
+// "instructor": "Scoggins",
+// "gpa": 3.85,
+// "aPercent": 75,
+// "bPercent": 25,
+// "cPercent": 0,
+// "dPercent": 0,
+// "fPercent": 0,
+// "withdraws": 0,
+// "gradedEnrollment": 8,
+// "crn": 19402,
+// "credits": 0
+//}
