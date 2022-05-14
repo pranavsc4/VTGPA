@@ -17,7 +17,7 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            CourseSearch()
+            CoursesList()
                 .tabItem {
                     Image(systemName: "magnifyingglass.circle.fill")
                     Text("Search Courses")

@@ -8,9 +8,9 @@
 import SwiftUI
 
 // Struct Representing Each Course
-struct Course: Hashable, Codable, Identifiable {
-    var id = UUID()
+struct Course: Hashable, Codable {
     var academicYear: String
+    var term: String
     var subject: String
     var courseNumber: Int
     var courseTitle: String

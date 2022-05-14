@@ -17,7 +17,7 @@ public func readCoursesDataFile() {
     // On Launch, Document Directory will not have Files
     var documentDirectoryHasFiles = false
     // Grade Data Filename
-    let coursesDataFileFullFilename = "GradeDataClean.json"
+    let coursesDataFileFullFilename = "GradeDataSample.json"
     
     // Global constant documentDirectory is defined in UtilityFunctions.swift
     let urlOfJsonFileInDocumentDirectory = documentDirectory.appendingPathComponent(coursesDataFileFullFilename)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+//@main
 struct VTGPAApp: App {
     let persistenceController = PersistenceController.shared
 

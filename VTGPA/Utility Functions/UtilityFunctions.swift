@@ -65,6 +65,7 @@ public func decodeJsonFileIntoArrayOfStructs<T: Decodable>(fullFilename: String,
        
         // Use the decoder object to decode JSON objects into an array of structs of type T
         arrayOfStructs = try decoder.decode(T.self, from: jsonFileData!)
+//        print(arrayOfStructs)
     } catch {
         print("Unable to decode JSON file \(fullFilename)!")
     }
