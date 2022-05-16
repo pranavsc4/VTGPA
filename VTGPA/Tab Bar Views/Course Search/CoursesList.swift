@@ -7,10 +7,22 @@
 
 import SwiftUI
 
+
+
 struct CoursesList: View {
+    private var courses: [Course] = Course.allCourses
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        NavigationView {
+            LazyVStack {
+                ForEach(courses) { course in
+                    Text(course.courseTitle)
+                    
+                }
+            } // End of Lazy VSTack
+            .navigationTitle(Text("Search Courses"))
+        } // End of Navigation View
+        
+    } // End of Body
 }
 
 struct CoursesList_Previews: PreviewProvider {

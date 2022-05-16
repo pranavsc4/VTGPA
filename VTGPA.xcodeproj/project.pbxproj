@@ -16,7 +16,7 @@
 		815121B4281DB2210026C808 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B3281DB2210026C808 /* Home.swift */; };
 		815121B7281DB35C0026C808 /* GradeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 815121B6281DB35C0026C808 /* GradeData.json */; };
 		815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B8281DB4C10026C808 /* CourseStruct.swift */; };
-		818F9512282B387F00304DA4 /* GradeDataClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 818F9511282B387F00304DA4 /* GradeDataClean.json */; };
+		817018F5283019EE00618C63 /* GradeDataClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 817018F4283019EE00618C63 /* GradeDataClean.json */; };
 		818F9514282B3A7300304DA4 /* CourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9513282B3A7300304DA4 /* CourseData.swift */; };
 		818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9516282B3BB300304DA4 /* SearchBar.swift */; };
 		818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9517282B3BB300304DA4 /* UtilityFunctions.swift */; };
@@ -39,7 +39,7 @@
 		815121B3281DB2210026C808 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		815121B6281DB35C0026C808 /* GradeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeData.json; sourceTree = "<group>"; };
 		815121B8281DB4C10026C808 /* CourseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
-		818F9511282B387F00304DA4 /* GradeDataClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeDataClean.json; sourceTree = "<group>"; };
+		817018F4283019EE00618C63 /* GradeDataClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeDataClean.json; sourceTree = "<group>"; };
 		818F9513282B3A7300304DA4 /* CourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseData.swift; sourceTree = "<group>"; };
 		818F9516282B3BB300304DA4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		818F9517282B3BB300304DA4 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				818F9528282B46D600304DA4 /* GradeDataSample.json */,
-				818F9511282B387F00304DA4 /* GradeDataClean.json */,
 				818F9513282B3A7300304DA4 /* CourseData.swift */,
+				817018F4283019EE00618C63 /* GradeDataClean.json */,
 				815121B6281DB35C0026C808 /* GradeData.json */,
 				815121B8281DB4C10026C808 /* CourseStruct.swift */,
 			);
@@ -221,8 +221,8 @@
 				815121A3281DAFFA0026C808 /* Preview Assets.xcassets in Resources */,
 				815121A0281DAFFA0026C808 /* Assets.xcassets in Resources */,
 				815121B7281DB35C0026C808 /* GradeData.json in Resources */,
-				818F9512282B387F00304DA4 /* GradeDataClean.json in Resources */,
 				818F9529282B46D600304DA4 /* GradeDataSample.json in Resources */,
+				817018F5283019EE00618C63 /* GradeDataClean.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
