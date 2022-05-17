@@ -6,15 +6,41 @@
 //
 
 import SwiftUI
+// Global testStruct for Preview
+var testStruct = Course(
+    academicYear: "2020-2021",
+    term: "Fall",
+    subject: "CS",
+    courseNumber: "4104",
+    courseTitle: "Data Algorithm & Analysis",
+    instructor: "Bo Ji",
+    gpa: 3.51,
+    aPercent: 50,
+    bPercent: 25,
+    cPercent: 25,
+    dPercent: 0,
+    fPercent: 0,
+    withdraws: 3,
+    gradedEnrollment: 88,
+    crn: 32101,
+    credits: 3)
 
 struct CoursesItem: View {
+    let course: Course
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        HStack {
+            VStack(alignment: .leading) {
+                Text(course.courseTitle)
+                Text(course.instructor)
+                Text(course.term)
+            }
+            
+        } // End of HStack
+    } // End of Body
 }
 
 struct CoursesItem_Previews: PreviewProvider {
     static var previews: some View {
-        CoursesItem()
+        CoursesItem(course: testStruct)
     }
 }
