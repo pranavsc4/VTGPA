@@ -14,20 +14,17 @@
 		815121A5281DAFFA0026C808 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121A4281DAFFA0026C808 /* Persistence.swift */; };
 		815121A8281DAFFA0026C808 /* VTGPA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 815121A6281DAFFA0026C808 /* VTGPA.xcdatamodeld */; };
 		815121B4281DB2210026C808 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B3281DB2210026C808 /* Home.swift */; };
-		815121B7281DB35C0026C808 /* GradeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 815121B6281DB35C0026C808 /* GradeData.json */; };
 		815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B8281DB4C10026C808 /* CourseStruct.swift */; };
-		818F9514282B3A7300304DA4 /* CourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9513282B3A7300304DA4 /* CourseData.swift */; };
 		818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9516282B3BB300304DA4 /* SearchBar.swift */; };
 		818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9517282B3BB300304DA4 /* UtilityFunctions.swift */; };
 		818F951B282B3F8D00304DA4 /* CoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F951A282B3F8D00304DA4 /* CoursesList.swift */; };
 		818F951D282B3F9A00304DA4 /* CoursesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F951C282B3F9A00304DA4 /* CoursesItem.swift */; };
 		818F951F282B3FA100304DA4 /* CoursesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F951E282B3FA100304DA4 /* CoursesDetails.swift */; };
-		818F9529282B46D600304DA4 /* GradeDataSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 818F9528282B46D600304DA4 /* GradeDataSample.json */; };
-		819710952832D21D0086F94A /* GradeDataClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 819710942832D21D0086F94A /* GradeDataClean.json */; };
 		81990D652832F2AF00B77ED7 /* SwiftPieChart in Frameworks */ = {isa = PBXBuildFile; productRef = 81990D642832F2AF00B77ED7 /* SwiftPieChart */; };
 		81990D682832F76D00B77ED7 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990D672832F76D00B77ED7 /* PieChartView.swift */; };
 		81990D6A2832F77900B77ED7 /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990D692832F77900B77ED7 /* PieSliceView.swift */; };
 		819FF01528342AD200A5D86B /* CourseDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819FF01428342AD200A5D86B /* CourseDataView.swift */; };
+		81FFE8872836BC5000691B08 /* GradeDataClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 81FFE8862836BC5000691B08 /* GradeDataClean.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,19 +36,16 @@
 		815121A4281DAFFA0026C808 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		815121A7281DAFFA0026C808 /* VTGPA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VTGPA.xcdatamodel; sourceTree = "<group>"; };
 		815121B3281DB2210026C808 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		815121B6281DB35C0026C808 /* GradeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeData.json; sourceTree = "<group>"; };
 		815121B8281DB4C10026C808 /* CourseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
-		818F9513282B3A7300304DA4 /* CourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseData.swift; sourceTree = "<group>"; };
 		818F9516282B3BB300304DA4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		818F9517282B3BB300304DA4 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		818F951A282B3F8D00304DA4 /* CoursesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesList.swift; sourceTree = "<group>"; };
 		818F951C282B3F9A00304DA4 /* CoursesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesItem.swift; sourceTree = "<group>"; };
 		818F951E282B3FA100304DA4 /* CoursesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetails.swift; sourceTree = "<group>"; };
-		818F9528282B46D600304DA4 /* GradeDataSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeDataSample.json; sourceTree = "<group>"; };
-		819710942832D21D0086F94A /* GradeDataClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = GradeDataClean.json; path = ../../../../rename_keys/GradeDataClean.json; sourceTree = "<group>"; };
 		81990D672832F76D00B77ED7 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		81990D692832F77900B77ED7 /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		819FF01428342AD200A5D86B /* CourseDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDataView.swift; sourceTree = "<group>"; };
+		81FFE8862836BC5000691B08 /* GradeDataClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeDataClean.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +131,7 @@
 		815121B5281DB3530026C808 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				819710942832D21D0086F94A /* GradeDataClean.json */,
-				818F9528282B46D600304DA4 /* GradeDataSample.json */,
-				818F9513282B3A7300304DA4 /* CourseData.swift */,
-				815121B6281DB35C0026C808 /* GradeData.json */,
+				81FFE8862836BC5000691B08 /* GradeDataClean.json */,
 				815121B8281DB4C10026C808 /* CourseStruct.swift */,
 			);
 			path = "Data Models";
@@ -230,10 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				815121A3281DAFFA0026C808 /* Preview Assets.xcassets in Resources */,
-				819710952832D21D0086F94A /* GradeDataClean.json in Resources */,
+				81FFE8872836BC5000691B08 /* GradeDataClean.json in Resources */,
 				815121A0281DAFFA0026C808 /* Assets.xcassets in Resources */,
-				815121B7281DB35C0026C808 /* GradeData.json in Resources */,
-				818F9529282B46D600304DA4 /* GradeDataSample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +245,6 @@
 				818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */,
 				818F951D282B3F9A00304DA4 /* CoursesItem.swift in Sources */,
 				815121B4281DB2210026C808 /* Home.swift in Sources */,
-				818F9514282B3A7300304DA4 /* CourseData.swift in Sources */,
 				818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */,
 				8151219C281DAFF60026C808 /* VTGPAApp.swift in Sources */,
 			);
@@ -397,6 +385,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,6 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

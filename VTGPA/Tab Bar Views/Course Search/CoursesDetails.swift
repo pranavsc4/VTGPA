@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CoursesDetails: View {
+struct CoursesDetails: View, Equatable {
     let course: Course
     var body: some View {
         
@@ -23,10 +23,12 @@ struct CoursesDetails: View {
 //                backgroundColor = Color(red: 30 / 255, green: 54 / 255, blue: 14 / 255, opacity: 1.0))
                 
             )
-                .frame(width: 300, height: 500, alignment: .center)
+                .padding(.all)
+                .frame(width: 350, height: 700, alignment: .center)
             
             
-            .navigationBarTitle(Text("Course Details"), displayMode: .automatic)
+            
+                .navigationBarTitle(Text("\(course.courseTitle)"), displayMode: .inline)
         }
        
     } // End of Body

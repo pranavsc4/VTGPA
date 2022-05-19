@@ -18,7 +18,7 @@ struct CoursesList: View {
         NavigationView {
             List {
                 SearchBar(searchItem: $searchItem, placeholder: "Search Courses")
-                ForEach(keywords[0...1000].filter
+                ForEach(keywords[25000...26000].filter
                         {self.searchItem.isEmpty ? true : $0.localizedStandardContains(self.searchItem)}, id: \.self)
                 { course in
                     NavigationLink(destination: CoursesDetails(course: self.searchCourseItem(searchListItem: course)))
@@ -33,14 +33,7 @@ struct CoursesList: View {
     } // End of Body
     
     func searchCourseItem(searchListItem: String) -> Course {
-        var index = 0
-//        print(courses.capacity)
-        for i in 0...(courses.capacity) {
-            if (searchListItem.contains(keywords[i])) {
-                index = i
-                break
-            }
-        }
+        let index = courses.firstIndex(where: {$0.id.uuidString == searchListItem.components(separatedBy: "|")[0]})!
         return courses[index]
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 // Struct Representing Each Course
 public struct Course: Hashable, Codable, Identifiable {
-    public var id: String {courseTitle + String(crn) + String(Int.random(in: 0...1000))}
+    public var id: UUID //String {courseTitle + String(crn) + String(Int.random(in: 0...100000))}
 //    var id = UUID()
     public var academicYear: String
     public var term: String
@@ -74,7 +74,7 @@ extension Bundle {
         var orderedSearchableCoursesList = [String]()
         
         for course in courseList {
-            let selectedCourseAttribute = "\(course.courseTitle) \(course.instructor) \(course.courseNumber) \(course.subject)"
+            let selectedCourseAttribute = "\(course.id)|\(course.courseTitle)|\(course.instructor)|\(course.courseNumber)|\(course.subject)"
             
             orderedSearchableCoursesList.append(selectedCourseAttribute)
         }

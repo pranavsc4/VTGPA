@@ -103,15 +103,15 @@ public struct PieChartView: View {
                             .foregroundColor(Color.black)
                     }
                     
-                }
+                } // End of ZStack
                 PieChartRows(colors: self.colors, names: self.names, values: self.values.map { self.formatter($0) }, percents: self.values.map { String(format: "%.0f%%", $0 * 100 / self.values.reduce(0, +)) })
+                CourseDataView(course: self.course)
                 
-                
-            }
+            } // End of VStack
             .background(self.backgroundColor)
             .foregroundColor(Color.white)
-        }
-    }
+        } // End of Geometry Reader
+    } // End of Body view
 }
 
 @available(OSX 10.15, *)

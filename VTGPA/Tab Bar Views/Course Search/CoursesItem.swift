@@ -8,6 +8,7 @@
 import SwiftUI
 // Global testStruct for Preview
 var testStruct = Course(
+    id: UUID(),
     academicYear: "2020-2021",
     term: "Fall",
     subject: "CS",
@@ -32,7 +33,8 @@ struct CoursesItem: View {
             VStack(alignment: .leading) {
                 Text(course.courseTitle)
                 Text(course.instructor)
-                Text(course.term)
+                Text(course.academicYear + " " + course.term)
+                Text(course.subject + " " + course.courseNumber)
             }
             
         } // End of HStack
