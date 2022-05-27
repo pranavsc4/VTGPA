@@ -10,7 +10,9 @@ import SwiftUI
 @main
 struct VTGPAApp: App {
     let persistenceController = PersistenceController.shared
-    
+    init() {
+        
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -8,7 +8,8 @@ import SwiftUI
 
 @available(OSX 10.15, *)
 public struct PieChartView: View {
-    public let course: Course
+//    public let course: Course
+    public let category: Category
     public let values: [Double]
     public let names: [String]
     public let formatter: (Double) -> String
@@ -39,8 +40,9 @@ public struct PieChartView: View {
         return tempSlices
     }
     
-    public init(course: Course, values:[Double], names: [String], formatter: @escaping (Double) -> String, centerText: Double, colors: [Color] = [Color.blue, Color.green, Color.orange], backgroundColor: Color = Color(red: 255 / 255, green: 255 / 255, blue: 255 / 255, opacity: 1.0), widthFraction: CGFloat = 0.75, innerRadiusFraction: CGFloat = 0.60){
-        self.course = course
+    public init(/*course: Course,*/ category: Category, values:[Double], names: [String], formatter: @escaping (Double) -> String, centerText: Double, colors: [Color] = [Color.blue, Color.green, Color.orange], backgroundColor: Color = Color(red: 255 / 255, green: 255 / 255, blue: 255 / 255, opacity: 1.0), widthFraction: CGFloat = 0.75, innerRadiusFraction: CGFloat = 0.60){
+//        self.course = course
+        self.category = category
         self.values = values
         self.names = names
         self.formatter = formatter
@@ -104,8 +106,9 @@ public struct PieChartView: View {
                     }
                     
                 } // End of ZStack
-                PieChartRows(colors: self.colors, names: self.names, values: self.values.map { self.formatter($0) }, percents: self.values.map { String(format: "%.0f%%", $0 * 100 / self.values.reduce(0, +)) })
-                CourseDataView(course: self.course)
+//                Spacer()
+                PieChartRows(colors: self.colors, names: self.names, values: self.values.map { String(format: "%.1f%%", $0 * 100 / self.values.reduce(0, +)) }, percents: self.values.map { String(format: "%.0f%%", $0 * 100 / self.values.reduce(0, +)) })
+//                CourseDataView(course: self.course)
                 
             } // End of VStack
             .background(self.backgroundColor)
@@ -134,8 +137,8 @@ struct PieChartRows: View {
                     VStack(alignment: .trailing) {
                         Text(self.values[i])
                             .foregroundColor(Color.black)
-                        Text(self.percents[i])
-                            .foregroundColor(Color.black)
+//                        Text(self.percents[i])
+//                            .foregroundColor(Color.black)
                     }
                 }
             }
@@ -168,11 +171,13 @@ struct PieChartRows: View {
 @available(OSX 10.15.0, *)
 struct PieChartView_Previews: PreviewProvider {
     static var previews: some View {
-        PieChartView(course: testStruct,
-                     values: [testStruct.aPercent,
-                              testStruct.bPercent,
-                              testStruct.cPercent,
-                              testStruct.dPercent],
+        PieChartView(
+//                     course: testCourseStruct,
+                     category: testCategoryStruct,
+                     values: [testCategoryStruct.aPercent,
+                              testCategoryStruct.bPercent,
+                              testCategoryStruct.cPercent,
+                              testCategoryStruct.dPercent],
                      names: ["A Percent",
                              "B Percent",
                              "C Percent",

@@ -74,30 +74,16 @@ extension Bundle {
         var orderedSearchableCoursesList = [String]()
         
         for course in courseList {
-            let selectedCourseAttribute = "\(course.id)|\(course.courseTitle)|\(course.instructor)|\(course.courseNumber)|\(course.subject)"
+            let selectedCourseAttribute = "\(course.id)|\(course.courseTitle)|\(course.courseNumber)|\(course.subject)"
             
             orderedSearchableCoursesList.append(selectedCourseAttribute)
         }
 //        print(orderedSearchableCoursesList[0])
         return orderedSearchableCoursesList
     }
+    
+    
+
 }
 
-//{
-// "academicYear": "2016-17",
-// "term": "Spring",
-// "subject": "HORT",
-// "courseNumber": 3346,
-// "courseTitle": "Herbaceous Landscape Plants",
-// "instructor": "Scoggins",
-// "gpa": 3.85,
-// "aPercent": 75,
-// "bPercent": 25,
-// "cPercent": 0,
-// "dPercent": 0,
-// "fPercent": 0,
-// "withdraws": 0,
-// "gradedEnrollment": 8,
-// "crn": 19402,
-// "credits": 0
-//}
+

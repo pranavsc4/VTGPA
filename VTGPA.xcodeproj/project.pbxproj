@@ -15,6 +15,8 @@
 		815121A8281DAFFA0026C808 /* VTGPA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 815121A6281DAFFA0026C808 /* VTGPA.xcdatamodeld */; };
 		815121B4281DB2210026C808 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B3281DB2210026C808 /* Home.swift */; };
 		815121B9281DB4C10026C808 /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815121B8281DB4C10026C808 /* CourseStruct.swift */; };
+		8183F100284045090048744B /* CategoryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183F0FF284045090048744B /* CategoryStruct.swift */; };
+		8183F10428404F6A0048744B /* GradeDataCompress.json in Resources */ = {isa = PBXBuildFile; fileRef = 8183F10328404F6A0048744B /* GradeDataCompress.json */; };
 		818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9516282B3BB300304DA4 /* SearchBar.swift */; };
 		818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F9517282B3BB300304DA4 /* UtilityFunctions.swift */; };
 		818F951B282B3F8D00304DA4 /* CoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F951A282B3F8D00304DA4 /* CoursesList.swift */; };
@@ -37,6 +39,8 @@
 		815121A7281DAFFA0026C808 /* VTGPA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VTGPA.xcdatamodel; sourceTree = "<group>"; };
 		815121B3281DB2210026C808 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		815121B8281DB4C10026C808 /* CourseStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
+		8183F0FF284045090048744B /* CategoryStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStruct.swift; sourceTree = "<group>"; };
+		8183F10328404F6A0048744B /* GradeDataCompress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GradeDataCompress.json; sourceTree = "<group>"; };
 		818F9516282B3BB300304DA4 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		818F9517282B3BB300304DA4 /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		818F951A282B3F8D00304DA4 /* CoursesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesList.swift; sourceTree = "<group>"; };
@@ -131,8 +135,10 @@
 		815121B5281DB3530026C808 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				8183F10328404F6A0048744B /* GradeDataCompress.json */,
 				81FFE8862836BC5000691B08 /* GradeDataClean.json */,
 				815121B8281DB4C10026C808 /* CourseStruct.swift */,
+				8183F0FF284045090048744B /* CategoryStruct.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 				815121A3281DAFFA0026C808 /* Preview Assets.xcassets in Resources */,
 				81FFE8872836BC5000691B08 /* GradeDataClean.json in Resources */,
 				815121A0281DAFFA0026C808 /* Assets.xcassets in Resources */,
+				8183F10428404F6A0048744B /* GradeDataCompress.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +251,7 @@
 				8151219E281DAFF60026C808 /* ContentView.swift in Sources */,
 				818F9518282B3BB300304DA4 /* SearchBar.swift in Sources */,
 				818F951D282B3F9A00304DA4 /* CoursesItem.swift in Sources */,
+				8183F100284045090048744B /* CategoryStruct.swift in Sources */,
 				815121B4281DB2210026C808 /* Home.swift in Sources */,
 				818F9519282B3BB300304DA4 /* UtilityFunctions.swift in Sources */,
 				8151219C281DAFF60026C808 /* VTGPAApp.swift in Sources */,
@@ -385,6 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +424,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

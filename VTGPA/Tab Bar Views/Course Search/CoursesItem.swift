@@ -7,7 +7,7 @@
 
 import SwiftUI
 // Global testStruct for Preview
-var testStruct = Course(
+var testCourseStruct = Course(
     id: UUID(),
     academicYear: "2020-2021",
     term: "Fall",
@@ -26,15 +26,68 @@ var testStruct = Course(
     crn: 32101,
     credits: 3)
 
+var testCategoryStruct = Category(
+    id: UUID(),
+    subject: "CS",
+    courseNum: "1114",
+    courseTitle: "Data Structures & Algorithms",
+    totalEnrollment: 58,
+    gpa: 2.98,
+    aPercent: 20.0,
+    bPercent: 20.0,
+    cPercent: 20.0,
+    dPercent: 20.0,
+    fPercent: 20.0,
+    credits: 3,
+    numberOfCourses: 2,
+    courses:
+        [Course(
+            id: UUID(),
+            academicYear: "2020-2021",
+            term: "Fall",
+            subject: "CS",
+            courseNumber: "1114",
+            courseTitle: "Data Structures and Algorithms",
+            instructor: "Barnette",
+            gpa: 2.53,
+            aPercent: 40.0,
+            bPercent: 20.0,
+            cPercent: 20.0,
+            dPercent: 20.0,
+            fPercent: 0.00,
+            withdraws: 4,
+            gradedEnrollment: 29,
+            crn: 43432,
+            credits: 3)
+         ,
+         Course(
+            id: UUID(),
+            academicYear: "2021-2022",
+            term: "Fall",
+            subject: "CS",
+            courseNumber: "1114",
+            courseTitle: "Data Structures and Algorithms",
+            instructor: "Fox",
+            gpa: 3.43,
+            aPercent: 0.0,
+            bPercent: 20.0,
+            cPercent: 20.0,
+            dPercent: 20.0,
+            fPercent: 40.0,
+            withdraws: 3,
+            gradedEnrollment: 29,
+            crn: 13234,
+            credits: 3)]
+)
+
 struct CoursesItem: View {
-    let course: Course
+//    let course: Course
+    let category: Category
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(course.courseTitle)
-                Text(course.instructor)
-                Text(course.academicYear + " " + course.term)
-                Text(course.subject + " " + course.courseNumber)
+                Text(category.courseTitle)
+                Text(category.subject + " " + category.courseNum)
             }
             
         } // End of HStack
@@ -43,6 +96,8 @@ struct CoursesItem: View {
 
 struct CoursesItem_Previews: PreviewProvider {
     static var previews: some View {
-        CoursesItem(course: testStruct)
+        CoursesItem(
+//            course: testCourseStruct,
+            category: testCategoryStruct)
     }
 }
